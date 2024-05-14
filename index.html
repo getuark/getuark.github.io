@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diario di Viaggio in Grecia</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="page" id="page1">
+        <h1>Diario di Viaggio in Grecia</h1>
+        <button onclick="changePage(2)">Inizia il Viaggio</button>
+    </div>
+    <div class="page" id="page2">
+        <h2>Giorno 1: Arrivo ad Atene</h2>
+        <p>Sono finalmente arrivato ad Atene, la città dalle radici antiche e dalla storia affascinante...</p>
+        <button onclick="changePage(3)">Prossimo Giorno</button>
+    </div>
+    <!-- Aggiungi le altre pagine qui con lo stesso formato -->
+</div>
+<script>
+    function changePage(pageNumber) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => {
+            page.style.display = 'none';
+        });
+        document.getElementById(`page${pageNumber}`).style.display = 'block';
+    }
+</script>
+</body>
+</html>
