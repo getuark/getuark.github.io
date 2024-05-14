@@ -10,23 +10,44 @@
 <div class="container">
     <div class="page" id="page1">
         <h1>Diario di Viaggio in Grecia</h1>
-        <button onclick="changePage(2)">Inizia il Viaggio</button>
+        <button id="startButton">Inizia il Viaggio</button>
     </div>
     <div class="page" id="page2">
         <h2>Giorno 1: Arrivo ad Atene</h2>
         <p>Sono finalmente arrivato ad Atene, la città dalle radici antiche e dalla storia affascinante...</p>
-        <button onclick="changePage(3)">Prossimo Giorno</button>
+        <button id="nextButton">Prossimo Giorno</button>
     </div>
-    <!-- Aggiungi le altre pagine qui con lo stesso formato -->
+    <div class="page" id="page3">
+        <h2>Giorno 2: All'Acropoli</h2>
+        <p>Oggi è stata una giornata indimenticabile. Sono salito sull'Acropoli, ammirando i maestosi resti dei templi antichi...</p>
+        <button id="nextButton">Prossimo Giorno</button>
+    </div>
+    <div class="page" id="page4">
+        <h2>Giorno 3: Esplorando i quartieri di Atene</h2>
+        <p>Ho trascorso la giornata esplorando altri quartieri di Atene...</p>
+        <button id="nextButton">Prossimo Giorno</button>
+    </div>
+    <div class="page" id="page5">
+        <h2>Giorno 4: Escursione a Capo Sounion</h2>
+        <p>Oggi ho preso un'escursione per visitare Capo Sounion...</p>
+        <button id="nextButton">Prossimo Giorno</button>
+    </div>
+    <div class="page" id="page6">
+        <h2>Giorno 5: Giornata di relax alle Spiagge di Mykonos</h2>
+        <p>Ho preso un traghetto per l'isola di Mykonos per una giornata di relax al mare...</p>
+        <button id="nextButton">Prossimo Giorno</button>
+    </div>
+    <div class="page" id="page7">
+        <h2>Giorno 6: Esplorando i vicoli di Santorini</h2>
+        <p>Oggi ho visitato l'incantevole isola di Santorini...</p>
+        <button id="nextButton">Prossimo Giorno</button>
+    </div>
+    <div class="page" id="page8">
+        <h2>Giorno 7: Ritorno ad Atene</h2>
+        <p>È giunto il momento di dire addio a queste isole magiche e tornare ad Atene per il mio volo di ritorno...</p>
+        <button id="nextButton">Fine Viaggio</button>
+    </div>
 </div>
-<script>
-    function changePage(pageNumber) {
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => {
-            page.style.display = 'none';
-        });
-        document.getElementById(`page${pageNumber}`).style.display = 'block';
-    }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
